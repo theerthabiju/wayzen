@@ -439,6 +439,60 @@ GSAP Registration
 			},
 		});
 	}
+	// sticky header
+window.addEventListener("scroll", function () {
+
+  let menu = document.getElementById("centerMenu");
+
+  if (window.scrollY > 120) {
+    menu.classList.add("sticky");
+  } else {
+    menu.classList.remove("sticky");
+  }
+
+});
+
+
+
+// toggle
+
+const toggleBtn = document.querySelector(".main-header-mobile");
+const mobileMenu = document.getElementById("mobileMenu");
+
+toggleBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+});
+document.querySelectorAll(".mobile-menu-list a")
+.forEach(link => {
+
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+  });
+
+});
+
+
+
+const closeBtn = document.getElementById("closeMenu");
+
+// Open Menu
+toggleBtn.addEventListener("click", () => {
+  mobileMenu.classList.add("active");
+});
+
+// Close Menu (X button)
+closeBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+});
+
+// Close when clicking menu link
+document.querySelectorAll(".mobile-menu-list a")
+.forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+  });
+});
+
 
 	// Testimonial Slider 3 Js
 	if ($(".testimonial-slider-3").length > 0) {
