@@ -7287,11 +7287,11 @@ START: Services CSS
     linear,
     left top,
     left bottom,
-    color-stop(20%, rgb(255, 0, 127)),
+    color-stop(20%, rgb(255, 0, 0)),
     color-stop(90%, rgba(255, 0, 127, 0))
   );
   background-image: linear-gradient(
-    rgb(255, 0, 127) 20%,
+    rgb(255, 0, 0) 20%,
     rgba(255, 0, 127, 0) 90%
   );
   width: 100%;
@@ -8065,6 +8065,12 @@ START: Project CSS
 ----------------------------------------*/
 .tj-project-section {
   position: relative;
+}
+.projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
 }
 .tj-project-section-2 {
   background-color: var(--tj-color-theme-bg);
@@ -10646,7 +10652,6 @@ START: Contact CSS
   height: 100%;
   border-radius: 12px;
   overflow: hidden;
-  mix-blend-mode: luminosity;
 }
 .map-area iframe {
   width: 100%;
