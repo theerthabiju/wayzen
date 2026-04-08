@@ -12087,7 +12087,7 @@ START: Faq CSS
 }
 .tj-faq.style-2 .accordion-item.active {
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--tj-color-theme-primary)), to(var(--tj-color-theme-dark)));
-  background-image: linear-gradient(var(--tj-color-theme-primary) 0%, var(--tj-color-theme-dark) 100%);
+  background-image: linear-gradient(rgb(243, 74, 74) 0%, rgb(100, 0, 0) 100%);
 }
 .tj-faq.style-3 .accordion-item {
   background: var(--tj-color-theme-bg);
