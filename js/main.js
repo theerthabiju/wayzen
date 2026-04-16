@@ -1414,7 +1414,7 @@ document.querySelectorAll(".mobile-menu-list a")
 			);
 		});
 
-		// Project stack
+		// Project
 		mediaMatch.add("(min-width: 992px)", () => {
 			let tl = gsap.timeline();
 			let projectItem = document.querySelectorAll(".project-stack");
