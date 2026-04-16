@@ -8697,11 +8697,11 @@ START: Testimonial CSS
     linear,
     left top,
     left bottom,
-    color-stop(15%, rgb(255, 0, 127)),
+    color-stop(15%, rgb(255, 0, 0)),
     color-stop(80%, rgba(255, 0, 127, 0))
   );
   background-image: linear-gradient(
-    rgb(255, 0, 127) 15%,
+    rgb(255, 0, 0) 15%,
     rgba(255, 0, 127, 0) 80%
   );
   width: 100%;
